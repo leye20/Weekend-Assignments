@@ -33,6 +33,7 @@ let obj = {
     'orange':  1
 }
 // selecting the object properties (reference path of the codelines below was gotten from stack overflow)
+//https://stackoverflow.com/questions/38824349/how-to-convert-an-object-to-an-array-of-key-value-pairs-in-javascript
 let toArray = Object.keys(obj).map(function(key) { // define the result variable and set the iteration.
     return [key, obj[key]] // converts the number to an array
 });
