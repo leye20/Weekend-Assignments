@@ -10,12 +10,7 @@ function makeTitle(str) {
     for (let i = 0; i < changeStr.length; i++) {
         changeStr[i] = changeStr[i].charAt(0).toUpperCase() + changeStr[i].substring(1);  // function that takes the first character in each word  
     }
-    return changeStr.slice(' '); // this return's the combine string
+    return changeStr.join(' '); // this return's the combine string
  }
  
- return makeTitle("learn javascript by the day!");
-
-
- /**
-  * 
-  */
+ console.log(makeTitle("learn javascript by the day!"));
