@@ -58,3 +58,25 @@ console.log(toArray);
 } else {
         console.log( "i is bigger than 567." );
     }
+
+// Break Loop example!
+const MIN = 0;
+const MAX = 36;
+var testNumber = 15;
+var i = 1;
+
+while ( MAX ) 
+{ // Math is the object, while floor and random are methods used to generate the random number.
+    let randomValue = Math.floor( Math.random() * ( MAX - MIN ) ) + MIN;
+
+    if ( randomValue == testNumber )
+    {
+        break; // the break statement terminates and moves out of the loop to the next code line, which is the last console.log line ref line 80.
+    }
+    console.log( "Round " + i + ": " + randomValue );
+    i++;
+}
+
+console.log( "The script went " + i + " rounds before finding " + testNumber + "." );
+
+// Continue Loop example
