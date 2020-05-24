@@ -60,6 +60,7 @@ console.log(toArray);
     }
 
 // Break Loop example!
+// Use the break loop if you need to terminate a loop if something happens.
 const MIN = 0;
 const MAX = 36;
 var testNumber = 15;
@@ -80,3 +81,28 @@ while ( MAX )
 console.log( "The script went " + i + " rounds before finding " + testNumber + "." );
 
 // Continue Loop example
+// Use the continue loop when you want to avoid certain condition within a loop.
+const CEILING = 100;
+
+function primeTest(testValue)
+{
+    let isPrime = true;
+    for ( let i = 2; i < testValue; i++ )
+    {
+        if ( testValue % i === 0 )
+        {
+            isPrime = false;
+        }
+    }
+    return isPrime;
+}
+
+for ( let i = 2; i < CEILING; i++ )
+{
+    let result = primeTest( i );
+    if ( result == false )
+    {
+        continue;
+    }
+    console.log( i + " is a prime number." );
+}
